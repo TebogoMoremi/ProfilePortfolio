@@ -56,6 +56,8 @@ body{
     color: var(--text-color);
     line-height: 1.6;
 }
+
+
 h1,h2,p{
     margin: 0;  
 }
@@ -77,6 +79,8 @@ img{
 /*===== CLASS CSS ===== */
 .section{
     padding: 3rem 0;
+    height: 100%;
+    
 
     &-title{
         position: relative;
@@ -218,6 +222,7 @@ img{
         justify-items: center;
         row-gap: 2rem;
         text-align: center;
+        
     }
     &__img{
         display: flex;
