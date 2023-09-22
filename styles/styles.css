@@ -70,17 +70,20 @@ ul{
 }
 a{
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--white-color);
 }
 img{
     max-width: 100%;
     height: auto;
     display: block;
 }
-
+section{
+   min-height: 100%;
+}
 /*===== CLASS CSS ===== */
 .section{
     padding: 3rem 0;
+   
 }
 .section-title{
     position: relative;
@@ -365,14 +368,14 @@ img{
     padding: .25rem 0;
 }
 .footer__link:hover{
-    color: var(--text-color);
+    color: var(--dark-color);
 }
 .footer__social{
     font-size: 1.4rem;
     margin-right: var(--mb-1);
 }
 .footer__social:hover{
-    color: var(--first-color);
+    color: var(--dark-color);
 }
 
 /* ===== MEDIA QUERIES =====*/
@@ -415,7 +418,7 @@ img{
         color: var(--white-color);
     }
     .nav__link:hover{
-        color: var(--white-color);
+        color: var(--dark-color);
     }
     .active::after{
         background-color: var(--white-color);
