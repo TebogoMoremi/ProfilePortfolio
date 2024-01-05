@@ -1,234 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="styles/styles.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ===== BOX ICONS ===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="styles/styles.css">
 
-    <title>Tebogo Portfolio</title>
-  </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
+  <!-- ===== BOX ICONS ===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    .skills__container {
+      margin-bottom: 60px;
+    }
+  </style>
+
+  <title>Tebogo Portfolio</title>
+</head>
+
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Tebogo Moremi</a>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link active">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container bd-grid">
+        <div class="image">
+          <img src="images/profile.jpg" alt="" />
+        </div>
+
         <div>
-          <a href="#" class="nav__logo">Tebogo Moremi</a>
-        </div>
+          <h2 class="about__subtitle">I'm Tebogo Moremi</h2>
+          <span class="about__profession">Web developer</span>
+          <p class="about__text">
+            My journey into the world of web development began when I realized
+            the power of code in creating digital experiences. I'm driven by
+            the endless possibilities that the web offers and the opportunity
+            to learn and innovate every day.
+          </p>
+          <p class="about__text">
+            With a strong foundation in HTML, CSS, and JavaScript, I
+            specialize in building responsive and intuitive user interfaces.
+            I'm also experienced in back-end technologies like ASP NET core
+            and databases like MSSQL, which allow me to create seamless,
+            data-driven web solutions.
+          </p>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#about" class="nav__link active">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container bd-grid">
-          <div class="image">
-            <img src="images/profile.jpg" alt="" />
+          <div class="about__social">
+            <a href="https://www.linkedin.com/in/tebogo-moremi-782746157/" class="about__social-icon" target="_blank"><i
+                class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/TebogoMoremi" class="about__social-icon" target="_blank"><i
+                class="bx bxl-github"></i></a>
           </div>
-
-          <div>
-            <h2 class="about__subtitle">I'm Tebogo Moremi</h2>
-            <span class="about__profession">Web developer</span>
-            <p class="about__text">
-              My journey into the world of web development began when I realized
-              the power of code in creating digital experiences. I'm driven by
-              the endless possibilities that the web offers and the opportunity
-              to learn and innovate every day.
-            </p>
-            <p class="about__text">
-              With a strong foundation in HTML, CSS, and JavaScript, I
-              specialize in building responsive and intuitive user interfaces.
-              I'm also experienced in back-end technologies like ASP NET core
-              and databases like MSSQL, which allow me to create seamless,
-              data-driven web solutions.
-            </p>
-
-            <div class="about__social">
-              <a
-                href="https://www.linkedin.com/in/tebogo-moremi-782746157/"
-                class="about__social-icon" target="_blank"
-                ><i class="bx bxl-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/TebogoMoremi"
-                class="about__social-icon" target="_blank"
-                ><i class="bx bxl-github"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-          <div class="skills__box">
-            <h3 class="skills__subtitle">Development</h3>
-            <span class="skills__name">Html</span>
-            <span class="skills__name">Css</span>
-            <span class="skills__name">Javascript</span>
-            <span class="skills__name">Scss</span>
-            <span class="skills__name">React js</span>
-            <span class="skills__name">GIT</span>
-            <span class="skills__name">C# </span>
-          </div>
-
-          <div class="skills__img">
-            <img src="images/Top-skills-in-demand-startuptalky.jpg" alt="" />
-          </div>
-          <br /><br /><br /><br /><br />
-        </div>
-      </section>
-      <!--===== PORTFOLIO =====-->
-      <section class="portfolio section" id="portfolio" style="height: 100%">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="skills__container bd-grid">
-          <div class="skills__box">
-            <!-- <h2 class="skills__name">coming soon!</h2> -->
-            <h3 class="skills__name">        coming soon!</h3>
-          </div>
-
-          <div class="skills__img">
-            <img src="images/photo-1572177812156-58036aae439c.jpeg" alt="" />
-          </div>
-          <br /><br /><br /><br /><br />
-        </div>
-      </section>
-
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-
-        <div class="contact__container bd-grid">
-          <div class="contact__info">
-            <h3 class="contact__subtitle">EMAIL</h3>
-            <span class="contact__text">tebogo.moremi@umuzi.org</span>
-
-            <h3 class="contact__subtitle">PHONE</h3>
-            <span class="contact__text">+2766-126-1352</span>
-
-            <h3 class="contact__subtitle">ADDRESS</h3>
-            <span class="contact__text">Johannesburg South</span>
-          </div>
-
-          <!-- <form action="" id="myForm" class="contact__form">
-            <div class="contact__inputs">
-              <input
-                type="text"
-                placeholder="Name"
-                id="name"
-                required
-                class="contact__input" />
-              <input
-                type="email"
-                placeholder="Email"
-                id="email"
-                required
-                class="contact__input" />
-            </div>
-
-            <textarea
-              name=""
-              id="info"
-              cols="0"
-              rows="10"
-              required
-              id="info"
-              class="contact__input"></textarea>
-              <div id="successAlert" style="display: none; color: green">
-                <p>Email has been successfully sent.</p>
-              </div>
-            <input
-              type="submit"
-              value="Send"
-              
-              class="contact__button" onclick="message()"/>
-             
-          </form> -->
-        </div>
-      </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer section" style="color: #5361ff">
-      <div class="footer__container bd-grid">
-        <div class="footer__data">
-          <h2 class="footer__title">EXPLORE</h2>
-          <ul>
-            <li><a href="#about" class="footer__link">About</a></li>
-            <li><a href="#skills" class="footer__link">Skills</a></li>
-            <li><a href="#portfolio" class="footer__link">Projects</a></li>
-            <li><a href="#Contact" class="footer__link">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__data">
-          <h2 class="footer__title">FOLLOW</h2>
-          <a
-            href="https://web.facebook.com/tebogo.moremi.12/"
-            target="_blank"
-            class="footer__social"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/tebzamoremi/"
-            class="footer__social"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="https://twitter.com/herroldmoremi"
-            target="_blank"
-            class="footer__social"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/tebogo-moremi-782746157/"
-            target="_blank"
-            class="footer__social"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/TebogoMoremi"
-            target="_blank"
-            class="footer__social"
-            ><i class="bx bxl-github"></i
-          ></a>
         </div>
       </div>
-    </footer>
-    <script src="scripts.js"></script>
-  </body>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills__container bd-grid">
+        <div class="skills__box">
+          <h3 class="skills__subtitle">Development</h3>
+          <span class="skills__name">Html</span>
+          <span class="skills__name">Css</span>
+          <span class="skills__name">Javascript</span>
+          <span class="skills__name">Scss</span>
+          <span class="skills__name">React js</span>
+          <span class="skills__name">GIT</span>
+          <span class="skills__name">C# </span>
+        </div>
+
+        <div class="skills__img">
+          <img src="images/Top-skills-in-demand-startuptalky.jpg" alt="" />
+        </div>
+
+      </div>
+    </section>
+    <!--===== PORTFOLIO =====-->
+    <section class="portfolio section" id="portfolio" style="height: 100%">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="skills__container bd-grid">
+        <div class="skills__box">
+          <h3 class="skills__name"> coming soon!</h3>
+        </div>
+
+        <div class="skills__img">
+          <img src="images/photo-1572177812156-58036aae439c.jpeg" alt="" />
+        </div>
+
+      </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact__container bd-grid">
+        <div class="contact__info">
+          <h3 class="contact__subtitle">EMAIL</h3>
+          <span class="contact__text">tebogo.moremi@umuzi.org</span>
+
+          <h3 class="contact__subtitle">PHONE</h3>
+          <span class="contact__text">+2766-126-1352</span>
+
+          <h3 class="contact__subtitle">ADDRESS</h3>
+          <span class="contact__text">Johannesburg South</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer section" style="color: #5361ff">
+    <div class="footer__container bd-grid">
+      <div class="footer__data">
+        <h2 class="footer__title">EXPLORE</h2>
+        <ul>
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#skills" class="footer__link">Skills</a></li>
+          <li><a href="#portfolio" class="footer__link">Projects</a></li>
+          <li><a href="#Contact" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__data">
+        <h2 class="footer__title">FOLLOW</h2>
+        <a href="https://web.facebook.com/tebogo.moremi.12/" target="_blank" class="footer__social"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/tebzamoremi/" class="footer__social"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/herroldmoremi" target="_blank" class="footer__social"><i
+            class="bx bxl-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/tebogo-moremi-782746157/" target="_blank" class="footer__social"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/TebogoMoremi" target="_blank" class="footer__social"><i
+            class="bx bxl-github"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
 </html>
